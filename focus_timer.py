@@ -65,7 +65,7 @@ if st.session_state.elapsed_time >= WORK_TIME and not st.session_state.is_runnin
 if st.session_state.points >= 50 and "50 Points Badge" not in st.session_state.badges:
     st.session_state.badges.append("50 Points Badge")
     st.write("🏅 You earned the 50 Points Badge!")
-    if st.session_state.points >= 100 and "100 Points Badge" not in st.session_state.badges:
+if st.session_state.points >= 100 and "100 Points Badge" not in st.session_state.badges:
     st.session_state.badges.append("100 Points Badge")
     st.write("🏆 You earned the 100 Points Badge!")
 
